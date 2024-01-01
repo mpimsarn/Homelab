@@ -1,9 +1,9 @@
 1. Download the ISO using the GUI (tested on https://cloud-images.ubuntu.com/lunar/current/lunar-server-cloudimg-amd64-disk-kvm.img)
-
+```
 cd /mnt/pve/nfs/template/iso/
 mv lunar-server-cloudimg-amd64-disk-kvm.img lunar-server-cloudimg-amd64-disk-kvm.qcow2
 qemu-img resize lunar-server-cloudimg-amd64-disk-kvm.qcow2 10G
-
+```
 1. Create the VM via CLI
 ```
 qm create 5000 --memory 4096 --core 2 --name ubuntu-cloud --net0 virtio,bridge=vmbr0
