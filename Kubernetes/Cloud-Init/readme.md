@@ -33,8 +33,7 @@ sudo chmod 777 /var/lib/dbus/machine-id
 sudo cat /dev/null > /var/lib/dbus/machine-id
 sudo cloud-init clean
 sudo shutdown -h now
-
-
+```
 
 4. Create the Cloud-Init template 
 5. Deploy new VMs by cloning the template (full clone)
