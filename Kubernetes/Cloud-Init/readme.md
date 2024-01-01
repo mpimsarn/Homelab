@@ -18,7 +18,11 @@ qm set 5000 --serial0 socket --vga serial0
 Adding the QEMU Agent
 
 Power up the template/VM you have created
-Install the agent with sudo apt update && sudo apt upgrade -y && sudo apt install qemu-guest-agent
+Install the agent with 
+```
+sudo apt update && sudo apt upgrade -y && sudo apt install qemu-guest-agent
+sudo systemctl enable qemu-guest-agent
+```
 Enable the agent with sudo systemctl enable qemu-guest-agent
 Reset the machine-id with cat /dev/null > /etc/machine-id
 
